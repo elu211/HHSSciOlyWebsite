@@ -20,7 +20,7 @@ jobs:
 
     - name: Fetch commit data
       run: |
-        curl -H "Authorization: token ${{ seH_TOKEN }}" \
+        curl -H "Authorization: token ${{ secret.GH_TOKEN }}" \
         "https://api.github.com/repos/${{ github.repository }}/commits?since=$(date -d '7 days ago' --utc +%Y-%m-%dT%H:%M:%SZ)" \
         > commits.json
 
