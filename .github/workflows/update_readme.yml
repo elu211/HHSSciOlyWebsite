@@ -24,9 +24,9 @@ jobs:
     - name: Fetch commit data
       run: |
         echo $PWD
-        echo "$(git shortlog -sn --since="7 days ago")" > commit_counts.txt
+        echo "$(git log |git shortlog -sn --since="7 days ago") > commit_counts.txt
         ls
-        echo $(git shortlog -sn --since="7 days ago")
+        echo $(git log |git shortlog -sn --since="7 days ago")
         echo "COMMIT INFO"
         cat commit_counts.txt
 
@@ -36,7 +36,7 @@ jobs:
         cd HHSSciOlyWebsite
         ls
         git fetch
-        echo "COMMIT CLONED $(git shortlog -sn --since="7 days ago")"
+        echo "COMMIT CLONED $(git log |git shortlog -sn --since="7 days ago")"
         
     - name: Update README
       run: |
