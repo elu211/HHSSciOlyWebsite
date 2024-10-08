@@ -41,35 +41,13 @@ jobs:
 
           # Get the list of contributors and their commit counts for the past week
           commit_info=$(git shortlog -s -n --since="1 week ago")
-          commit_history=$(git log --since="7 days ago" --pretty=format:"%h - %an: %s (%ci)")
-          echo "GH HISTORY $commit_history"
-          # Read the README file and replace the placeholder section
-          echo "Commit Info: $commit_info"
 
           awk -v commit_info="$commit_info" '
           BEGIN { section = 0 }
-          /<!-- COMMIT_SECTION_START -->/ { 
-              print "Start section found"; 
-              print; 
-              section = 1; 
-              print commit_info; 
-              next 
-          }
-          /<!-- COMMIT_SECTION_END -->/ { 
-              print "End section found"; 
-              section = 0 
-          }
-          !section { 
-              print 
-          }
+          /<!-- COMMIT_SECTION_START -->/ { print; section = 1; print commit_info; next }
+          /<!-- COMMIT_SECTION_END -->/ { section = 0 }
+          !section { print }
           ' README.md > README.tmp && mv README.tmp README.md
-
-          #awk -v commit_info="$commit_info" '
-          #BEGIN { section = 0 }
-          #/<!-- COMMIT_SECTION_START -->/ { print; section = 1; print commit_info; next }
-          #/<!-- COMMIT_SECTION_END -->/ { section = 0 }
-          #!section { print }
-          #' README.md > README.tmp && mv README.tmp README.md
 
           # Commit and push changes
           git add README.md
