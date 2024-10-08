@@ -50,6 +50,8 @@ jobs:
           !section { print }
           ' README.md > README.tmp && mv README.tmp README.md
 
+          cat README.tmp
+
           # awk -v commit_info="$commit_info" '
           # BEGIN { section = 0 }
           # /<!-- COMMIT_SECTION_START -->/ { print; section = 1; print commit_info; next }
