@@ -6,9 +6,15 @@ permissions:
       issues: write
       pull-requests: write
 
+on: [push, pull_request]
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    env:
+      ACTIONS_RUNNER_DEBUG: true
+      ACTIONS_STEP_DEBUG: true
 
     steps:
       - name: Checkout code
@@ -18,15 +24,5 @@ jobs:
 
       - name: Save commit history to file
         run: |
-          git log --oneline > commit_history.txt
-          cat commit_history.txt
-
-      - name: Commit and push changes
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add commit_history.txt
-          git commit -m 'Save commit history'
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          git log -1 --pretty=format:"%an <%ae>" > commit_author_info.txt
+          cat commit_author_info.txt
