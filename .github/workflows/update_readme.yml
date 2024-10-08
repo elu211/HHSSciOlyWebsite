@@ -1,0 +1,49 @@
+name: Update README
+
+env:
+  GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Authenticate with GitHub
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git
+
+      - name: Run update script
+        run: |
+          # Fetch the latest changes
+          git fetch
+
+          # Get the list of contributors and their commit counts for the past week
+          commit_info=$(git shortlog -s -n --since="1 week ago")
+
+          # Read the README file and replace the placeholder section
+          awk -v commit_info="$commit_info" '
+          BEGIN { section = 0 }
+          /<!-- COMMIT_SECTION_START -->/ { print; section = 1; print commit_info; next }
+          /<!-- COMMIT_SECTION_END -->/ { section = 0 }
+          !section { print }
+          ' README.md > README.tmp && mv README.tmp README.md
+
+          # Commit and push changes
+          git add README.md
+          git commit -m "Update README with commits by contributors in the past week"
+          git push
