@@ -1,115 +1,58 @@
-name: Update README
+name: Update README with Commit Counts
 
 on:
   push:
     branches:
       - main
 
-env:
-  GH_TOKEN: ${{secrets.GH_TOKEN}}
-
 permissions:
       contents: write
       issues: write
       pull-requests: write
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-        with: 
-          depth: 0  
-    
-      - name: Set up Git
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
-      - name: Clone Directory
-        run: |
-          git clone "https://github.com/elu211/HHSSciOlyWebsite"
-          cd HHSSciOlyWebsite
-          
-      - name: Authenticate with GitHub
-        run: |
-          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/elu211/HHSSciOlyWebsite.git
+    - name: Fetch commit data
+      run: |
+        curl -H "Authorization: token ${{ seH_TOKEN }}" \
+        "https://api.github.com/repos/${{ github.repository }}/commits?since=$(date -d '7 days ago' --utc +%Y-%m-%dT%H:%M:%SZ)" \
+        > commits.json
 
-      - name: Run update script
-        run: |
-          # Fetch the latest changes
-          git fetch
+    - name: Process commit data
+      run: |
+        jq -r '.[] | .commit.author.name' commits.json | sort | uniq -c | sort -nr > commit_counts.txt
 
-          # Get the commit history for the past week
-          # commit_info=$(git log --since="7 days ago" --pretty=format:"%an")
-          # echo "Commit Info: $commit_info"
+    - name: Update README
+      run: |
+        # Read the current README
+        readme=$(cat README.md)
+        
+        # Extract the part before the marker
+        before_marker=$(echo "$readme" | sed -n '1,/<!-- COMMIT_SECTION_START -->/p')
+        
+        # Extract the part after the marker
+        after_marker=$(echo "$readme" | sed -n '/<!-- COMMIT_SECTION_END -->/,$p')
+        
+        # Create the new content
+        new_content=$(cat commit_counts.txt)
+        
+        # Combine the parts
+        echo "$before_marker" > README.md
+        echo "<!-- COMMIT_COUNTS_START -->" >> README.md
+        echo "$new_content" >> README.md
+        echo "<!-- COMMIT_COUNTS_END -->" >> README.md
+        echo "$after_marker" >> README.md
 
-          # Get the list of contributors and their commit counts for the past week
-          commit_info=$(git shortlog -s -n --since="1 week ago")
-          echo "Commit Info: $commit_info"
-  
-          # Read the README file and replace the placeholder section
-          awk -v commit_info="$commit_info" '
-          BEGIN {
-              section = 0;
-          }
-          /<!-- COMMIT_SECTION_START -->/ {
-              print;
-              section = 1;
-              print commit_info;
-              next;
-          }
-          /<!-- COMMIT_SECTION_END -->/ {
-              section = 0;
-          }
-          !section {
-              print;
-          }
-          ' README.md > README.tmp && mv README.tmp README.md
-          
-          # Commit and push changes
-          git add README.md
-          git commit -m "Update README with commits by contributors in the past week"
-          git push
-
-          
-          # Read the README file and replace the placeholder section
-          # awk -v commit_info="$commit_info" '
-          # BEGIN {
-          #     section = 0;
-          #     split(commit_info, commits, "\t");
-          #     for (i in commits) {
-          #         author = commits[i];
-          #         if (author != "") {
-          #             commit_count[author]++;
-          #         }
-          #     }
-          # }
-          # /<!-- COMMIT_SECTION_START -->/ {
-          #     print;
-          #     section = 1;
-          #     for (author in commit_count) {
-          #         print author ": " commit_count[author] " commits";
-          #     }
-          #     next;
-          # }
-          # /<!-- COMMIT_SECTION_END -->/ {
-          #     section = 0;
-          # }
-          # !section {
-          #     print;
-          # }
-          # ' README.md > README.tmp && mv README.tmp README.md
-
-
-
-          # cat README.tmp
-
-          # awk -v commit_info="$commit_info" '
-          # BEGIN { section = 0 }
-          # /<!-- COMMIT_SECTION_START -->/ { print; section = 1; print commit_info; next }
-          # /<!-- COMMIT_SECTION_END -->/ { section = 0 }
-          # !section { print }
-          # ' README.md > README.tmp && mv README.tmp README.md
-
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add README.md
+        git commit -m "Update README with weekly commit counts"
+        git push
