@@ -17,6 +17,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  
+    
       - name: Set up Git
         run: |
           git config --global user.name 'github-actions[bot]'
