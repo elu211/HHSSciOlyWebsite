@@ -26,19 +26,19 @@ jobs:
     - name: Fetch commit data
       run: |
         # echo $PWD
-        # echo "$(git log | git shortlog -sn --since="7 days ago") > commit_counts.txt
+        echo "$(git log | git shortlog -sn --since="7 days ago") > commit_counts.txt
         # ls
-        echo $(git log | git shortlog -sn --since="7 days ago")
+        # echo $(git log | git shortlog -sn --since="7 days ago")
         # echo "COMMIT INFO"
         # cat commit_counts.txt
 
-    - name: Clone and Test
-      run: | 
-        git clone https://github.com/elu211/HHSSciOlyWebsite
-        cd HHSSciOlyWebsite
-        ls
-        git fetch
-        echo "COMMIT CLONED $(git log | git shortlog -sn --since="7 days ago")"
+    # - name: Clone and Test
+    #   run: | 
+    #     git clone https://github.com/elu211/HHSSciOlyWebsite
+    #     cd HHSSciOlyWebsite
+    #     ls
+    #     git fetch
+    #     echo "COMMIT CLONED $(git log | git shortlog -sn --since="7 days ago")"
         
     - name: Update README
       run: |
