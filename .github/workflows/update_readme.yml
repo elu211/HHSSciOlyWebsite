@@ -41,12 +41,13 @@ jobs:
 
           # Get the commit history for the past week
           commit_info=$(git log --since="7 days ago" --pretty=format:"%an")
+          echo "Commit Info: $commit_info"
           
           # Read the README file and replace the placeholder section
           awk -v commit_info="$commit_info" '
           BEGIN {
               section = 0;
-              split(commit_info, commits, "\n");
+              split(commit_info, commits, "\t");
               for (i in commits) {
                   author = commits[i];
                   if (author != "") {
