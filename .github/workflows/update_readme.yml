@@ -37,7 +37,7 @@ jobs:
 
           # Get the list of contributors and their commit counts for the past week
           commit_info=$(git shortlog -s -n --since="1 week ago")
-          echo "commit_info"
+          echo "$commit_info"
           # Read the README file and replace the placeholder section
           awk -v commit_info="$commit_info" '
           BEGIN { section = 0 }
