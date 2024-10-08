@@ -40,9 +40,8 @@ jobs:
           git fetch
 
           # Get the list of contributors and their commit counts for the past week
-          commit_history=$(git log --since="7 days ago" --pretty=format:"%h - %an: %s (%ci)")
-          commit_info=$(git shortlog -s -n --since="1 week ago")
-          echo "Commit HISTORY: $commit_history"
+          commit_info=$(git log --since="7 days ago" --pretty=format:"%h - %an: %s (%ci)")
+
           awk -v commit_info="$commit_info" '
           BEGIN { section = 0 }
           /<!-- COMMIT_SECTION_START -->/ { print; section = 1; print commit_info; next }
