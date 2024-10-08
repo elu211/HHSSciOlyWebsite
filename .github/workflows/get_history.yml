@@ -2,6 +2,11 @@ name: Save Commit History
 
 on: [push, pull_request]
 
+permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
