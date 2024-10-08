@@ -25,11 +25,6 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-      - name: Clone Repo and cd
-        run: |
-          git clone https://github.com/elu211/HHSSciOlyWebsite
-          cd HHSSciOlyWebsite
-
       - name: Authenticate with GitHub
         run: |
           GH_TOKEN=${{ secrets.GH_TOKEN }}
