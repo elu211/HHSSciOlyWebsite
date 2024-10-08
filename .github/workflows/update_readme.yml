@@ -28,9 +28,9 @@ jobs:
         # echo $PWD
         echo "$(git log | git shortlog -sn --since="7 days ago") > commit_counts.txt
         # ls
-        # echo $(git log | git shortlog -sn --since="7 days ago")
+        echo $(git log | git shortlog -sn --since="7 days ago")
         # echo "COMMIT INFO"
-        # cat commit_counts.txt
+        cat commit_counts.txt
 
     # - name: Clone and Test
     #   run: | 
