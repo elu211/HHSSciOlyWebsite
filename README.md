@@ -10,5 +10,4 @@ Start section found
 Start section found
 <!-- COMMIT_SECTION_START -->
 
-End section found
 <!-- COMMIT_SECTION_END -->
