@@ -43,11 +43,19 @@ jobs:
           commit_info=$(git log --since="7 days ago" --pretty=format:"%h - %an: %s (%ci)")
 
           awk -v commit_info="$commit_info" '
-          BEGIN { section = 0 }
+          int; section = 1; print commit_info; next }
+          /<!-- COMMIT_S>           BEGIN { section = 0 }
           /<!-- COMMIT_SECTION_START -->/ { print; section = 1; print commit_info; next }
           /<!-- COMMIT_SECTION_END -->/ { section = 0 }
           !section { print }
           ' README.md > README.tmp && mv README.tmp README.md
+
+          # awk -v commit_info="$commit_info" '
+          # BEGIN { section = 0 }
+          # /<!-- COMMIT_SECTION_START -->/ { print; section = 1; print commit_info; next }
+          # /<!-- COMMIT_SECTION_END -->/ { section = 0 }
+          # !section { print }
+          # ' README.md > README.tmp && mv README.tmp README.md
 
           # Commit and push changes
           git add README.md
