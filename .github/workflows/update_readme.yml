@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
@@ -44,6 +44,25 @@ jobs:
           # Get the commit history for the past week
           # commit_info=$(git log --since="7 days ago" --pretty=format:"%an")
           # echo "Commit Info: $commit_info"
+
+          # # Get the list of contributors and their commit counts for the past week
+          commit_info=$(git shortlog -s -n --since="1 week ago")
+          echo "Commit Info: $commit_info"
+
+          awk -v commit_info="$commit_info" '
+          int; section = 1; print commit_info; next }
+          /<!-- COMMIT_S>           BEGIN { section = 0 }
+          /<!-- COMMIT_SECTION_START -->/ { print; section = 1; print commit_info; next }
+          /<!-- COMMIT_SECTION_END -->/ { section = 0 }
+          !section { print }
+          ' README.md > README.tmp && mv README.tmp README.md
+
+          
+          # Commit and push changes
+          git add README.md
+          git commit -m "Update README with commits by contributors in the past week"
+          git push
+
           
           # Read the README file and replace the placeholder section
           # awk -v commit_info="$commit_info" '
@@ -73,17 +92,7 @@ jobs:
           # }
           # ' README.md > README.tmp && mv README.tmp README.md
 
-          # # Get the list of contributors and their commit counts for the past week
-          commit_info=$(git shortlog -s -n --since="1 week ago")
-          echo "Commit Info: $commit_info"
 
-          awk -v commit_info="$commit_info" '
-          int; section = 1; print commit_info; next }
-          /<!-- COMMIT_S>           BEGIN { section = 0 }
-          /<!-- COMMIT_SECTION_START -->/ { print; section = 1; print commit_info; next }
-          /<!-- COMMIT_SECTION_END -->/ { section = 0 }
-          !section { print }
-          ' README.md > README.tmp && mv README.tmp README.md
 
           # cat README.tmp
 
@@ -94,7 +103,3 @@ jobs:
           # !section { print }
           # ' README.md > README.tmp && mv README.tmp README.md
 
-          # Commit and push changes
-          git add README.md
-          git commit -m "Update README with commits by contributors in the past week"
-          git push
