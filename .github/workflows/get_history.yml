@@ -1,5 +1,5 @@
 name: Save Commit History
-
+disable temp
 on: [push, pull_request]
 
 permissions:
