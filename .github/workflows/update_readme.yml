@@ -18,7 +18,9 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Set up Git
         run: |
@@ -40,38 +42,10 @@ jobs:
           git fetch
 
           # Get the commit history for the past week
-          commit_info=$(git log --since="7 days ago" --pretty=format:"%an")
-          echo "Commit Info: $commit_info"
-
-          # Read the README file and replace the placeholder section
-          awk -v commit_info="$commit_info" '
-          BEGIN {
-              section = 0;
-              split(commit_info, commits, "\n");
-              for (i in commits) {
-                  author = commits[i];
-                  if (author != "") {
-                      commit_count[author]++;
-                  }
-              }
-          }
-          /<!-- COMMIT_SECTION_START -->/ {
-              print;
-              section = 1;
-              for (author in commit_count) {
-                  print author ": " commit_count[author] " commits";
-              }
-              next;
-          }
-          /<!-- COMMIT_SECTION_END -->/ {
-              section = 0;
-          }
-          !section {
-              print;
-          }
-          ' README.md > README.tmp && mv README.tmp README.md
+          # commit_info=$(git log --since="7 days ago" --pretty=format:"%an")
+          # echo "Commit Info: $commit_info"
           
-          # # Read the README file and replace the placeholder section
+          # Read the README file and replace the placeholder section
           # awk -v commit_info="$commit_info" '
           # BEGIN {
           #     section = 0;
@@ -100,15 +74,16 @@ jobs:
           # ' README.md > README.tmp && mv README.tmp README.md
 
           # # Get the list of contributors and their commit counts for the past week
-          # commit_info=$(git log --since="7 days ago" --pretty=format:"%h - %an: %s (%ci)")
+          commit_info=$(git shortlog -s -n --since="1 week ago")
+          echo "Commit Info: $commit_info"
 
-          # awk -v commit_info="$commit_info" '
-          # int; section = 1; print commit_info; next }
-          # /<!-- COMMIT_S>           BEGIN { section = 0 }
-          # /<!-- COMMIT_SECTION_START -->/ { print; section = 1; print commit_info; next }
-          # /<!-- COMMIT_SECTION_END -->/ { section = 0 }
-          # !section { print }
-          # ' README.md > README.tmp && mv README.tmp README.md
+          awk -v commit_info="$commit_info" '
+          int; section = 1; print commit_info; next }
+          /<!-- COMMIT_S>           BEGIN { section = 0 }
+          /<!-- COMMIT_SECTION_START -->/ { print; section = 1; print commit_info; next }
+          /<!-- COMMIT_SECTION_END -->/ { section = 0 }
+          !section { print }
+          ' README.md > README.tmp && mv README.tmp README.md
 
           # cat README.tmp
 
