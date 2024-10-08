@@ -20,8 +20,7 @@ jobs:
 
     - name: Fetch commit data
       run: |
-        git clone https://github.com/elu211/HHSSciOlyWebsite
-        cd HHSSciOlyWebsite
+        echo $PWD
         echo "$(git shortlog -sn --since="7 days ago")" > commit_counts.txt
         ls
         echo $(git shortlog -sn --since="7 days ago")
