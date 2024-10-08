@@ -27,10 +27,10 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-      # - name: Clone Directory
-      #   run: |
-      #     git clone "https://github.com/elu211/HHSSciOlyWebsite"
-      #     cd HHSSciOlyWebsite
+      - name: Clone Directory
+        run: |
+          git clone "https://github.com/elu211/HHSSciOlyWebsite"
+          cd HHSSciOlyWebsite
           
       - name: Authenticate with GitHub
         run: |
