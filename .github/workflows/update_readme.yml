@@ -21,11 +21,16 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
+      - name: Clone Repo and cd
+        run: |
+        git clone https://github.com/elu211/HHSSciOlyWebsite
+        cd HHSSciOlyWebsite
+
       - name: Authenticate with GitHub
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git
+          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/elu211/${{ github.repository }}
 
       - name: Run update script
         run: |
