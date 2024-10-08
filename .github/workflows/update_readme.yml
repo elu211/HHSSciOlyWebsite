@@ -24,6 +24,8 @@ jobs:
         cd HHSSciOlyWebsite
         echo "$(git shortlog -sn --since="7 days ago")" > commit_counts.txt
         ls
+        echo $(git shortlog -sn --since="7 days ago")
+        echo "COMMIT INFO"
         cat commit_counts.txt
 
     - name: Update README
@@ -36,6 +38,9 @@ jobs:
         
         # Extract the part after the marker
         after_marker=$(echo "$readme" | sed -n '/<!-- COMMIT_SECTION_END -->/,$p')
+
+        echo $PWD
+        ls
         
         # Create the new content
         new_content=$(cat commit_counts.txt)
