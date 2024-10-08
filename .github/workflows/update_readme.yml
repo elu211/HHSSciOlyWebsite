@@ -41,7 +41,7 @@ jobs:
 
           # Get the list of contributors and their commit counts for the past week
           commit_info=$(git shortlog -s -n --since="1 week ago")
-          echo "$commit_info"
+          echo "Commit Info: $commit_info"
           awk -v commit_info="$commit_info" '
           BEGIN { section = 0 }
           /<!-- COMMIT_SECTION_START -->/ { print; section = 1; print commit_info; next }
