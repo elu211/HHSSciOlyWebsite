@@ -20,15 +20,17 @@ jobs:
 
     - name: Checkout repository
       uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
 
     - name: Fetch commit data
       run: |
-        echo $PWD
-        echo "$(git log |git shortlog -sn --since="7 days ago") > commit_counts.txt
-        ls
-        echo $(git log |git shortlog -sn --since="7 days ago")
-        echo "COMMIT INFO"
-        cat commit_counts.txt
+        # echo $PWD
+        # echo "$(git log | git shortlog -sn --since="7 days ago") > commit_counts.txt
+        # ls
+        echo $(git log | git shortlog -sn --since="7 days ago")
+        # echo "COMMIT INFO"
+        # cat commit_counts.txt
 
     - name: Clone and Test
       run: | 
@@ -36,7 +38,7 @@ jobs:
         cd HHSSciOlyWebsite
         ls
         git fetch
-        echo "COMMIT CLONED $(git log |git shortlog -sn --since="7 days ago")"
+        echo "COMMIT CLONED $(git log | git shortlog -sn --since="7 days ago")"
         
     - name: Update README
       run: |
