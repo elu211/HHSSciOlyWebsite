@@ -22,8 +22,8 @@ jobs:
       run: |
         git clone https://github.com/elu211/HHSSciOlyWebsite
         cd HHSSciOlyWebsite
-        print git shortlog -sn --since="7 days ago"
-        git shortlog -sn --since="7 days ago" > commit_counts.txt
+        echo "$(git shortlog -sn --since="7 days ago")" > commit_counts.txt
+        ls
         cat commit_counts.txt
 
     - name: Update README
