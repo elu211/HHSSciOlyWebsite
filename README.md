@@ -9,5 +9,5 @@ Start section found
 Start section found
 Start section found
 <!-- COMMIT_SECTION_START -->
-Elliot Lu: 1 commits
+
 <!-- COMMIT_SECTION_END -->
