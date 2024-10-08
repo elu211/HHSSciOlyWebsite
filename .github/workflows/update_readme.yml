@@ -23,8 +23,8 @@ jobs:
 
       - name: Clone Repo and cd
         run: |
-        git clone https://github.com/elu211/HHSSciOlyWebsite
-        cd HHSSciOlyWebsite
+          git clone https://github.com/elu211/HHSSciOlyWebsite
+          cd HHSSciOlyWebsite
 
       - name: Authenticate with GitHub
         env:
