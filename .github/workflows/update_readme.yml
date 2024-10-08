@@ -20,13 +20,9 @@ jobs:
 
     - name: Fetch commit data
       run: |
-        curl -H "Authorization: token ${{ secrets.GH_TOKEN }}" \
-        "https://api.github.com/repos/${{ github.repository }}/commits?since=$(date -d '7 days ago' --utc +%Y-%m-%dT%H:%M:%SZ)" \
-        > commits.json
-
-    - name: Process commit data
-      run: |
-        jq -r '.[] | .commit.author.name' commits.json | sort | uniq -c | sort -nr > commit_counts.txt
+        git clone https://github.com/elu211/HHSSciOlyWebsite
+        cd HHSSciOlyWebsite
+        git shortlog -sn --since="7 days ago" > commit_counts.txt
 
     - name: Update README
       run: |
