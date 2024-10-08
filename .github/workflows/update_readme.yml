@@ -23,6 +23,7 @@ jobs:
         git clone https://github.com/elu211/HHSSciOlyWebsite
         cd HHSSciOlyWebsite
         git shortlog -sn --since="7 days ago" > commit_counts.txt
+        cat commit_counts.txt
 
     - name: Update README
       run: |
