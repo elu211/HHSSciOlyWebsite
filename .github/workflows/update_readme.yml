@@ -1,4 +1,4 @@
-name: Update README with Commit Counts
+name: Update README
 
 on:
   push:
