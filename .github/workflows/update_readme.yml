@@ -35,7 +35,7 @@ jobs:
     #     cd HHSSciOlyWebsite
     #     ls
     #     git fetch
-    #     echo "$(git log | git shortlog -sn --since="7 days ago")" > commit_counts.txt
+    #     echo "$(git log | git shortlog -sn --since="1 weeks ago")" > commit_counts.txt
         
         
     - name: Update README
