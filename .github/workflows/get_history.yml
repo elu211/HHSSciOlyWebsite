@@ -20,3 +20,12 @@ jobs:
       run: |
         git log --pretty=format:"Author: %an, Date: %ad, Title: %s" --date=short > commit_log.txt
         cat commit_log.txt
+    
+    - name: Push to Github
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add commit_log.txt
+        git commit -m "Update Commit Logs"
+        git push
+      
