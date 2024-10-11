@@ -7,20 +7,25 @@ permissions:
       pull-requests: write
 
 jobs:
-  build:
+  show-commits:
     runs-on: ubuntu-latest
 
-    env:
-      ACTIONS_RUNNER_DEBUG: true
-      ACTIONS_STEP_DEBUG: true
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0  # Fetch all commit history
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
 
-      - name: Save commit history to file
-        run: |
-          git log -1 --pretty=format:"%an <%ae>" > commit_author_info.txt
-          cat commit_author_info.txt
+    - name: List commits and save to file
+      run: |
+        git log --pretty=format:"Author: %an, Date: %ad, Title: %s" --date=short > commit_log.txt
+        cat commit_log.txt
+    
+    - name: Push to Github
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add commit_log.txt
+        git commit -m "Update Commit Logs"
+        git push
+      
