@@ -1,0 +1,98 @@
+Author: Elliot Lu, Date: 2024-10-10, Title: Merge branch 'main' of https://github.com/elu211/HHSSciOlyWebsite
+Author: Elliot Lu, Date: 2024-10-10, Title: Don't Quit
+Author: github-actions[bot], Date: 2024-10-11, Title: Update README with weekly commit counts
+Author: Elliot Lu, Date: 2024-10-10, Title: Update get_history.yml
+Author: github-actions[bot], Date: 2024-10-11, Title: Update README with weekly commit counts
+Author: Elliot Lu, Date: 2024-10-10, Title: Update get_history.yml
+Author: github-actions[bot], Date: 2024-10-10, Title: Update README with weekly commit counts
+Author: Elliot Lu, Date: 2024-10-10, Title: Update update_readme.yml
+Author: github-actions[bot], Date: 2024-10-10, Title: Update README with weekly commit counts
+Author: Elliot Lu, Date: 2024-10-10, Title: Update update_readme.yml
+Author: github-actions[bot], Date: 2024-10-10, Title: Update README with weekly commit counts
+Author: Elliot Lu, Date: 2024-10-10, Title: Update update_readme.yml
+Author: github-actions[bot], Date: 2024-10-10, Title: Update README with weekly commit counts
+Author: Elliot Lu, Date: 2024-10-10, Title: Started Next JS project with shadcn
+Author: github-actions[bot], Date: 2024-10-08, Title: Update README with weekly commit counts
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: github-actions[bot], Date: 2024-10-08, Title: Update README with weekly commit counts
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: github-actions[bot], Date: 2024-10-08, Title: Update README with weekly commit counts
+Author: Elliot Lu, Date: 2024-10-08, Title: Update get_history.yml
+Author: github-actions[bot], Date: 2024-10-08, Title: Update README with weekly commit counts
+Author: Elliot Lu, Date: 2024-10-08, Title: Update get_history.yml
+Author: github-actions[bot], Date: 2024-10-08, Title: Save commit history
+Author: Elliot Lu, Date: 2024-10-08, Title: Update get_history.yml
+Author: github-actions[bot], Date: 2024-10-08, Title: Update README with weekly commit counts
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update get_history.yml
+Author: github-actions[bot], Date: 2024-10-08, Title: Save commit history
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: github-actions[bot], Date: 2024-10-08, Title: Save commit history
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: github-actions[bot], Date: 2024-10-08, Title: Save commit history
+Author: Elliot Lu, Date: 2024-10-08, Title: Update get_history.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Create get_history.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: github-actions[bot], Date: 2024-10-08, Title: Update README with commits by contributors in the past week
+Author: github-actions[bot], Date: 2024-10-08, Title: Update README with commits by contributors in the past week
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update README.md
+Author: github-actions[bot], Date: 2024-10-08, Title: Update README with commits by contributors in the past week
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: github-actions[bot], Date: 2024-10-08, Title: Update README with commits by contributors in the past week
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: github-actions[bot], Date: 2024-10-08, Title: Update README with commits by contributors in the past week
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: github-actions[bot], Date: 2024-10-08, Title: Update README with commits by contributors in the past week
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: github-actions[bot], Date: 2024-10-08, Title: Update README with commits by contributors in the past week
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: github-actions[bot], Date: 2024-10-08, Title: Update README with commits by contributors in the past week
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: github-actions[bot], Date: 2024-10-08, Title: Update README with commits by contributors in the past week
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: github-actions[bot], Date: 2024-10-08, Title: Update README with commits by contributors in the past week
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-08, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-07, Title: Update update_readme.yml
+Author: elu211, Date: 2024-10-07, Title: Merge branch 'main' of https://github.com/elu211/HHSSciOlyWebsite
+Author: elu211, Date: 2024-10-07, Title: Update update_readme.yml
+Author: github-actions[bot], Date: 2024-10-07, Title: Update README with commits by contributors in the past week
+Author: Elliot Lu, Date: 2024-10-07, Title: Update update_readme.yml
+Author: elu211, Date: 2024-10-07, Title: Implement README updater
+Author: Yu Zheng, Date: 2024-10-04, Title: next js template
+Author: Elliot Lu, Date: 2024-10-01, Title: Update README.md
+Author: Elliot Lu, Date: 2024-10-01, Title: Initial commit
