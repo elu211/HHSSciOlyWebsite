@@ -4,7 +4,7 @@ Unofficial website for the Homestead High School Website
 In the process of making it official.
 
 
-## Commits by Contributors in the Past Week
+## Total Commits by Contributors
 <!-- COMMIT_SECTION_START -->
 <!-- COMMIT_COUNTS_START -->
     70	Elliot Lu
