@@ -18,6 +18,7 @@ jobs:
 
     - name: List commits and save to file
       run: |
+        git fetch;
         git log --pretty=format:"Author: %an, Date: %ad, Title: %s" --date=short > commit_log.txt
         cat commit_log.txt
     
