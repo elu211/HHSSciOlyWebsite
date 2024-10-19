@@ -1,8 +1,31 @@
 import Image from "next/image";
+import Link from "next/link";
+import logo from "./SciOlyLogo.svg";
+
+let sans = ['"Times New Roman"'];
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen pr-8 pl-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <header>
+      <div className="flex justify-center items-center">
+        <Image 
+          className="dark:invert"
+          src= {logo}
+          width="0"
+          height="0"
+          sizes="100vw"
+          style={{ width: '100px', height: 'auto'}}
+          priority alt={""}/>
+      </div>
+      <Link href="/officers"
+        className="font-family:sans; text-2xl"
+        >
+      HHS Science Olypiad
+      </Link>
+      
+
+      </header>
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
@@ -12,6 +35,7 @@ export default function Home() {
           height={38}
           priority
         />
+        <h1>HHS Sci Olypiad Website</h1>
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
             Get started by editing{" "}
