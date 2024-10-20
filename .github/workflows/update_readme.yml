@@ -23,6 +23,10 @@ jobs:
       with:
         fetch-depth: 0
 
+    - name: Pull and Rebase
+      run: | 
+        git pull --rebase origin main
+    
     - name: Fetch commit data
       run: |
         # echo $PWD
