@@ -9,8 +9,8 @@ In the process of making it official.
 ## Total Commits by Contributors
 <!-- COMMIT_SECTION_START -->
 <!-- COMMIT_COUNTS_START -->
-    70	Elliot Lu
-    29	github-actions[bot]
+    73	Elliot Lu
+    33	github-actions[bot]
      3	elu211
      1	Aidan Tam
      1	Yu Zheng
