@@ -1,124 +1,47 @@
+'use client';
 import Image from "next/image";
-import Link from "next/link";
-import logo from "./SciOlyLogo.svg";
-
-let sans = ['"Times New Roman"'];
+import sphere from "./100.png";
+import Navbar from '@/components/ui/navbar2'
+// import tinos from '@/components/ui/fonts'
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen pr-8 pl-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <header>
-      <div className="flex justify-center items-center">
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen pt-16 pb-20 gap-16  font-[family-name:var(--font-geist-sans)]">
+        <div className="flex w-full justify-center items-center">
+            <Navbar />
+        </div>
+      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+      
+      <div className="relative w-full overflow-clip items-center" style={{height:"500px"}}>
         <Image 
-          className="dark:invert"
-          src= {logo}
-          width="0"
-          height="0"
-          sizes="100vw"
-          style={{ width: '100px', height: 'auto'}}
-          priority alt={""}/>
+            src= {sphere}
+            width="0"
+            height="0"
+            className="object-none z-0 object-center w-full h-auto "
+            priority alt={""}
+        />
+        <h1 className="absolute top-0 bottom-0 w-50 h-fit text-5xl ml-20 mt-auto mb-auto z-100 text-white text-left" >Welcome to <br/>Homestead <br/>Science Olympiad!</h1  >
       </div>
-      <Link href="/officers"
-        className="font-family:sans; text-2xl"
-        >
-      HHS Science Olypiad
-      </Link>
+      
       
 
-      </header>
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <h1>HHS Sci Olypiad Website</h1>
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li> and see your changes instantly.</li>
-        </ol>
+      <div className="w-50 object-center m-auto flex items-center flex-col sm:flex-row" >
+        <p  className="top-10 bottom-0 w-full h-fit text-2xl z-10 text-emerald-500 text-left  font-semibold" style={{padding: '50px 250px'}}>
+        Science Olympiad is a team-oriented club where members explore various disciplines within science, <br/>
+        most of which are not typically covered in a school's science curriculum. We <br/>
+        compete at a variety of tournaments throughout the year, and can lead all the way to the <br/>
+        national competition held in May/June. From astronomy to epidemiology, building bridges <br/>
+        to designing experiments, join our team today and discover your passions!
+        </p>
+        <p>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+        </p>
+      </div>
+      <div style={{height:'1000px'}}></div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      <footer className="w-full row-start-3 flex gap-20 p-20 items-center justify-center">
+        <p className="text-left p-20">©2024 Elliot Lu, Fisher Zheng, and Aidan Tam</p> 
+        <p className="text-right p-20">Made with Next.js 🧡 </p>
       </footer>
     </div>
   );
