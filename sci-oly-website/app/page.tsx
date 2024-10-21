@@ -12,7 +12,7 @@ export default function Home() {
         </div>
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
       
-      <div className="relative w-full overflow-clip items-center rounded-xl" style={{height:"500px"}}>
+      <div className="relative w-full overflow-clip items-center rounded-xl" style={{height:"800px"}}>
         <Image 
             src= {sphere}
             width="0"
@@ -20,7 +20,7 @@ export default function Home() {
             className="object-none z-0 object-center w-full h-auto rounded-xl"
             priority alt={""}
         />
-        <h1 className="absolute top-0 bottom-0 w-50 h-fit text-5xl ml-20 mt-auto mb-auto z-100 text-white text-left" >Welcome to <br/>Homestead <br/>Science Olympiad!</h1  >
+        <h1 className="absolute top-0 bottom-0 w-50 h-fit text-7xl ml-20 mt-auto mb-auto z-100 text-white text-left" >Welcome to <br/>Homestead <br/>Science Olympiad!</h1  >
       </div>
       
       
