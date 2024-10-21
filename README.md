@@ -12,8 +12,8 @@ Please check branch: alpha-0.1
 ## Total Commits by Contributors
 <!-- COMMIT_SECTION_START -->
 <!-- COMMIT_COUNTS_START -->
-    75	Elliot Lu
-    35	github-actions[bot]
+    78	Elliot Lu
+    36	github-actions[bot]
      3	elu211
      1	Aidan Tam
      1	Yu Zheng
