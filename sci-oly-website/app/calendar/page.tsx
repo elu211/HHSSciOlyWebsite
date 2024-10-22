@@ -7,7 +7,7 @@ export default function calendar() {
             <div className="w-full flex justify-center items-center">
                 <Navbar />
             </div>
-            <p>Link Google Calendar to this page</p>
+            <iframe src="https://calendar.google.com/calendar/embed?src=scienceolympiad.hhs%40gmail.com&ctz=America%2FLos_Angeles" width="800" height="600"  scrolling="no"></iframe>
         </div>
     );
 }
