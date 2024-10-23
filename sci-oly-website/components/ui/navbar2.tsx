@@ -55,14 +55,7 @@ const Navbar = () => {
         <NavLinks/>
         </div>
       </div>
-      <div
-        style={{
-          padding: '15px 15px 2500px',
-          fontSize: '30px',
-          marginTop: '30px',
-        }}
-      >
-      </div>
+
     </div>
   );
 };
