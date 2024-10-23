@@ -7,6 +7,7 @@ export default function calendar() {
             <div className="w-full flex justify-center items-center">
                 <Navbar />
             </div>
+            <p>2024-2025 School Year Calendar:</p>
             <iframe src="https://calendar.google.com/calendar/embed?src=scienceolympiad.hhs%40gmail.com&ctz=America%2FLos_Angeles" width="800" height="600"  scrolling="no"></iframe>
         </div>
     );
