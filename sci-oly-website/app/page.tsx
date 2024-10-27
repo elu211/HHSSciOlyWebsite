@@ -25,13 +25,12 @@ export default function Home() {
       
       
 
-      <div className="w-50 object-center m-auto flex items-center flex-col sm:flex-row" >
-        <p  className="top-10 bottom-0 w-full h-fit text-2xl z-10 text-emerald-500 text-left  font-semibold" style={{padding: '5px 250px'}}>
-        Science Olympiad is a team-oriented club where members explore various disciplines within science, <br/>
-        most of which are not typically covered in a school's science curriculum. We <br/>
-        compete at a variety of tournaments throughout the year, and can lead all the way to the <br/>
-        national competition held in May/June. From astronomy to epidemiology, building bridges <br/>
-        to designing experiments, join our team today and discover your passions!
+      <div className="w-50 object-center m-auto flex items-center flex-col sm:flex-row pt-20" >
+        <p  className="top-20 bottom-0 w-full h-fit text-4xl z-10 text-emerald-500 text-left  font-semibold" style={{padding: '5px 250px'}}>
+        Homestead Science Olympiad is a local business dedicated to promoting scientific knowledge and <br/><br/>
+        skills among students. Our goal is to foster a love for science through fun and engaging activities.<br/><br/>
+        At Homestead Science Olympiad, we believe in the power of hands-on learning and strive to create <br/><br/>
+        an environment where young minds can explore, experiment, and excel.
         </p>
         <p>
 

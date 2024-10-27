@@ -12,9 +12,8 @@ const links = [
     name: 'Officers',
     href: '/officers'
   },
-  { name: 'Competitions', href: '/competitions'},
   { name: 'Calendar', href: '/calendar'},
-  { name: 'Contact', href: '/contact'},
+  { name: 'Competitions', href: '/competitions'},
   { name: 'Links', href: '/links'},
 ];
 

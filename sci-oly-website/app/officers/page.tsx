@@ -28,92 +28,37 @@ export default function officers() {
                 <div className="relative flex w-full overflow-clip justify-center pl-32 pr-32 gap-32">
 
                     <UserIntro
-                        imagepath='water.png'
+                        imagepath='blank.png'
                         oName="Officer"
                         description="Blank">
                         </UserIntro>
-                    <div className="rounded-2xl w-1/4 bg-green-300 ">
-                        <p className="w-full text-xl text-center p-4 rounded-2xl"></p>
-                        <div className="object-center  relative w-2/3 items-center overflow-clip l-50 r-50 m-auto" style={{height:"300px", borderRadius:"20px"}}>
-                            <Image 
-                                src= {placeholder}
-                                width="0"
-                                height="0"
-                                className="object-scale-down z-0 object-center w-full h-auto rounded-3xl p-5"
-                                priority alt={""}
-                                style={{borderRadius:"10px"}}
-                            />
-                        </div>
-                        <p className="w-full font-semibold text-2xl text-center p-2 rounded-2xl">Officer Name</p>
-                        <p className="w-full text-xl text-center p-2 rounded-2xl">Decription</p>
-                        <p className="w-full text-xl text-center p-2 rounded-2xl"></p>
-                    </div>
-                    <div className="rounded-2xl w-1/4 bg-green-300 ">
-                        <p className="w-full text-xl text-center p-4 rounded-2xl"></p>
-                        <div className="object-center  relative w-2/3 items-center overflow-clip l-50 r-50 m-auto" style={{height:"300px", borderRadius:"20px"}}>
-                            <Image 
-                                src= {placeholder}
-                                width="0"
-                                height="0"
-                                className="object-scale-down z-0 object-center w-full h-auto rounded-3xl p-5"
-                                priority alt={""}
-                                style={{borderRadius:"10px"}}
-                            />
-                        </div>
-                        <p className="w-full font-semibold text-2xl text-center p-2 rounded-2xl">Officer Name</p>
-                        <p className="w-full text-xl text-center p-2 rounded-2xl">Decription</p>
-                        <p className="w-full text-xl text-center p-2 rounded-2xl"></p>
-                    </div>
+                    <UserIntro
+                        imagepath='blank.png'
+                        oName="Officer"
+                        description="Blank">
+                        </UserIntro>
+                    <UserIntro
+                        imagepath='blank.png'
+                        oName="Officer"
+                        description="Blank">
+                        </UserIntro>
                 </div>
                 <div className="relative flex w-full overflow-clip justify-center pl-32 pr-32 gap-32">
-                    <div className="rounded-2xl w-1/4 bg-green-300 ">
-                        <p className="w-full text-xl text-center p-4 rounded-2xl"></p>
-                        <div className="object-center  relative w-2/3 items-center overflow-clip l-50 r-50 m-auto" style={{height:"300px", borderRadius:"20px"}}>
-                            <Image 
-                                src= {placeholder}
-                                width="0"
-                                height="0"
-                                className="object-scale-down z-0 object-center w-full h-auto rounded-3xl p-5"
-                                priority alt={""}
-                                style={{borderRadius:"10px"}}
-                            />
-                        </div>
-                        <p className="w-full font-semibold text-2xl text-center p-2 rounded-2xl">Officer Name</p>
-                        <p className="w-full text-xl text-center p-2 rounded-2xl">Decription</p>
-                        <p className="w-full text-xl text-center p-2 rounded-2xl"></p>
-                    </div>
-                    <div className="rounded-2xl w-1/4 bg-green-300 ">
-                        <p className="w-full text-xl text-center p-4 rounded-2xl"></p>
-                        <div className="object-center  relative w-2/3 items-center overflow-clip l-50 r-50 m-auto" style={{height:"300px", borderRadius:"20px"}}>
-                            <Image 
-                                src= {placeholder}
-                                width="0"
-                                height="0"
-                                className="object-scale-down z-0 object-center w-full h-auto rounded-3xl p-5"
-                                priority alt={""}
-                                style={{borderRadius:"10px"}}
-                            />
-                        </div>
-                        <p className="w-full font-semibold text-2xl text-center p-2 rounded-2xl">Officer Name</p>
-                        <p className="w-full text-xl text-center p-2 rounded-2xl">Decription</p>
-                        <p className="w-full text-xl text-center p-2 rounded-2xl"></p>
-                    </div>
-                    <div className="rounded-2xl w-1/4 bg-green-300 ">
-                        <p className="w-full text-xl text-center p-4 rounded-2xl"></p>
-                        <div className="object-center  relative w-2/3 items-center overflow-clip l-50 r-50 m-auto" style={{height:"300px", borderRadius:"20px"}}>
-                            <Image 
-                                src= {placeholder}
-                                width="0"
-                                height="0"
-                                className="object-scale-down z-0 object-center w-full h-auto rounded-3xl p-5"
-                                priority alt={""}
-                                style={{borderRadius:"10px"}}
-                            />
-                        </div>
-                        <p className="w-full font-semibold text-2xl text-center p-2 rounded-2xl">Officer Name</p>
-                        <p className="w-full text-xl text-center p-2 rounded-2xl">Decription</p>
-                        <p className="w-full text-xl text-center p-2 rounded-2xl"></p>
-                    </div>
+                    <UserIntro
+                        imagepath='blank.png'
+                        oName="Officer"
+                        description="Blank">
+                        </UserIntro>
+                    <UserIntro
+                        imagepath='blank.png'
+                        oName="Officer"
+                        description="Blank">
+                        </UserIntro>
+                    <UserIntro
+                        imagepath='blank.png'
+                        oName="Officer"
+                        description="Blank">
+                        </UserIntro>
                     
                 </div>
             </main>
