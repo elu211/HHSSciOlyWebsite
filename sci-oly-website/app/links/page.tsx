@@ -1,6 +1,7 @@
 'use client';
 import Navbar from '@/components/ui/navbar2'
 import Link from 'next/link';
+import React from "react";
 
 export default function links() {
     return (

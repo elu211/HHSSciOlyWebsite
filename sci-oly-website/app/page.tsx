@@ -2,6 +2,7 @@
 import Image from "next/image";
 import sphere from "@/components/images/100.png";
 import Navbar from '@/components/ui/navbar2'
+import React from "react";
 // import tinos from '@/components/ui/fonts'
 
 export default function Home() {

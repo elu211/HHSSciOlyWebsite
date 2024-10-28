@@ -1,8 +1,8 @@
 'use client';
 import Navbar from '@/components/ui/navbar2';
+import React from "react";
 import Image from 'next/image';
 import water from '@/components/images/Water.png';
-import placeholder from '@/components/images/blank.png';
 import UserIntro from '@/components/ui/userintro';
 
 export default function officers() {

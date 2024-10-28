@@ -1,6 +1,5 @@
 import Image from 'next/image';
-import placeholder from '/components/images/water.png';
-import DynamicImage from '@/components/ui/getImage';
+import React from "react";
 
 
 const userintro = ({imagepath = 'blank.png', oName='Officer Name', description='Description'}) => {

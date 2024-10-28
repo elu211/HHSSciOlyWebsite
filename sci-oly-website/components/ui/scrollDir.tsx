@@ -2,6 +2,7 @@ import { useEffect, useState} from "react";
 import Link from "next/link";
 import logo from "@/app/SciOlyLogo.svg";
 import NavLinks from "./nav-links";
+import React from "react";
 import Image from "next/image";
 
 const GetOpacity = () => {

@@ -1,5 +1,7 @@
+/* eslint-disable react/no-unescaped-entities */
 'use client';
-import Navbar from '@/components/ui/navbar2'
+import Navbar from '@/components/ui/navbar2';
+import React from "react";
 
 export default function about() {
     return (
