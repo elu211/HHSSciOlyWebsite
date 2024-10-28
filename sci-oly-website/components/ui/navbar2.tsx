@@ -48,21 +48,14 @@ const Navbar = () => {
         <Link href="/"
             className="text-4xl pl-5"
         >
-        <p style={{fontFamily: 'tinos'}}>Homestead Science Olypiad</p>
+        <p style={{fontFamily: 'tinos'}}>Homestead Science Olympiad</p>
         </Link>
         </div>
       <div className={`w-full bg-white flex justify-center items-center`}>
         <NavLinks/>
         </div>
       </div>
-      <div
-        style={{
-          padding: '15px 15px 2500px',
-          fontSize: '30px',
-          marginTop: '30px',
-        }}
-      >
-      </div>
+
     </div>
   );
 };
