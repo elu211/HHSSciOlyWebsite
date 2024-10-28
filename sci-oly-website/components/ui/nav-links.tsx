@@ -13,7 +13,7 @@ const links = [
     href: '/officers'
   },
   { name: 'Calendar', href: '/calendar'},
-  { name: 'Competitions', href: '/competitions'},
+  // { name: 'Competitions', href: '/competitions'},
   { name: 'Links', href: '/links'},
 ];
 

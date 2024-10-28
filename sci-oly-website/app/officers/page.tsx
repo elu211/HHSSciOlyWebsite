@@ -63,7 +63,8 @@ export default function officers() {
                 </div>
             </main>
             <footer className="w-full row-start-3 flex gap-20 p-20 items-center justify-center">
-                <p className="text-left p-20">©2024 Elliot Lu, Fisher Zheng, and Aidan Tam</p>exit
+                <p className="text-left p-20">©2024 Elliot Lu, Fisher Zheng, and Aidan Tam</p>
+                <p className="text-left p-20">HHS SciOly Logo ©2024 Homestead Science Olympiad</p>
             </footer>
         </div>
     );
