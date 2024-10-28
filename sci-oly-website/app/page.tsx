@@ -13,7 +13,7 @@ export default function Home() {
         </div>
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
       
-      <div className="relative w-full overflow-clip items-center rounded-xl" style={{height:"800px"}}>
+      <div className="relative w-full overflow-clip items-center rounded-xl" style={{height:"600px"}}>
         <Image 
             src= {sphere}
             width="0"
@@ -27,7 +27,7 @@ export default function Home() {
       
 
       <div className="w-50 object-center m-auto flex items-center flex-col sm:flex-row pt-20" >
-        <p  className="top-20 bottom-0 w-full h-fit text-4xl z-10 text-emerald-500 text-left  font-semibold" style={{padding: '5px 250px'}}>
+        <p  className="top-20 bottom-0 w-full h-fit text-3xl z-10 text-emerald-500 text-left  font-semibold" style={{padding: '5px 200px'}}>
         Homestead Science Olympiad is a local business dedicated to promoting scientific knowledge and <br/><br/>
         skills among students. Our goal is to foster a love for science through fun and engaging activities.<br/><br/>
         At Homestead Science Olympiad, we believe in the power of hands-on learning and strive to create <br/><br/>
