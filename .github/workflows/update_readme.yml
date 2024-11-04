@@ -62,7 +62,9 @@ jobs:
         # Combine the parts
         echo "$before_marker" > README.md
         echo "<!-- COMMIT_COUNTS_START -->" >> README.md
+        echo "```" >> README.md
         echo "$new_content" >> README.md
+        echo "```" >> README.md
         echo "<!-- COMMIT_COUNTS_END -->" >> README.md
         echo "$after_marker" >> README.md
 
