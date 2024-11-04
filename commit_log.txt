@@ -1,3 +1,29 @@
+Author: Elliot Lu, Date: 2024-11-03, Title: Merge branch 'beta-0.1' of https://github.com/elu211/HHSSciOlyWebsite into beta-0.1
+Author: Elliot Lu, Date: 2024-11-03, Title: Fixed Error due to gitignore file
+Author: github-actions[bot], Date: 2024-11-04, Title: Update Commit Logs
+Author: Elliot Lu, Date: 2024-11-03, Title: Merge branch 'beta-0.1' of https://github.com/elu211/HHSSciOlyWebsite into beta-0.1
+Author: Elliot Lu, Date: 2024-11-03, Title: Add sharp image optimization
+Author: github-actions[bot], Date: 2024-11-04, Title: Update Commit Logs
+Author: Elliot Lu, Date: 2024-11-03, Title: Merge branch 'beta-0.1' of https://github.com/elu211/HHSSciOlyWebsite into beta-0.1
+Author: Elliot Lu, Date: 2024-11-03, Title: Fix File Not Found Error
+Author: github-actions[bot], Date: 2024-11-04, Title: Update Commit Logs
+Author: Elliot Lu, Date: 2024-11-03, Title: Merge branch 'beta-0.1' of https://github.com/elu211/HHSSciOlyWebsite into beta-0.1
+Author: Elliot Lu, Date: 2024-11-03, Title: Update lockfile
+Author: github-actions[bot], Date: 2024-11-04, Title: Update Commit Logs
+Author: Elliot Lu, Date: 2024-11-03, Title: Added Database Integration & Ready for Beta
+Author: github-actions[bot], Date: 2024-11-04, Title: Update Commit Logs
+Author: Aidan Tam, Date: 2024-11-03, Title: Merge branch 'beta-0.1' of https://github.com/elu211/HHSSciOlyWebsite into beta-0.1
+Author: Aidan Tam, Date: 2024-11-03, Title: tweeked
+Author: github-actions[bot], Date: 2024-11-04, Title: Update Commit Logs
+Author: Aidan Tam, Date: 2024-11-03, Title: Added table grid for comps page
+Author: github-actions[bot], Date: 2024-11-01, Title: Update Commit Logs
+Author: Aidan Tam, Date: 2024-11-01, Title: Made the links a hyperlink
+Author: github-actions[bot], Date: 2024-11-01, Title: Update Commit Logs
+Author: Aidan Tam, Date: 2024-11-01, Title: Update lock file
+Author: github-actions[bot], Date: 2024-10-28, Title: Update Commit Logs
+Author: Elliot Lu, Date: 2024-10-27, Title: Update README.md
+Author: Elliot Lu, Date: 2024-10-27, Title: Merge pull request #2 from elu211/alpha-0.1
+Author: github-actions[bot], Date: 2024-10-28, Title: Update Commit Logs
 Author: Elliot Lu, Date: 2024-10-27, Title: Fix scaling issues
 Author: github-actions[bot], Date: 2024-10-28, Title: Update Commit Logs
 Author: Elliot Lu, Date: 2024-10-27, Title: Merge branch 'alpha-0.1' of https://github.com/elu211/HHSSciOlyWebsite into alpha-0.1
@@ -27,8 +53,18 @@ Author: github-actions[bot], Date: 2024-10-22, Title: Update Commit Logs
 Author: Aidan Tam, Date: 2024-10-22, Title: calendar embed code added
 Author: github-actions[bot], Date: 2024-10-21, Title: Update Commit Logs
 Author: Elliot Lu, Date: 2024-10-21, Title: Increased Page Size
+Author: Elliot Lu, Date: 2024-10-21, Title: Update .gitignore
+Author: Elliot Lu, Date: 2024-10-20, Title: Update update_readme.yml
+Author: github-actions[bot], Date: 2024-10-21, Title: Update README with weekly commit counts
+Author: Elliot Lu, Date: 2024-10-20, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-20, Title: Update update_readme.yml
+Author: Elliot Lu, Date: 2024-10-20, Title: Create CODEOWNERS
 Author: github-actions[bot], Date: 2024-10-21, Title: Update Commit Logs
 Author: Elliot Lu, Date: 2024-10-20, Title: Started on Officers Page
+Author: github-actions[bot], Date: 2024-10-20, Title: Update README with weekly commit counts
+Author: Elliot Lu, Date: 2024-10-20, Title: Update README.md
+Author: github-actions[bot], Date: 2024-10-20, Title: Update README with weekly commit counts
+Author: Elliot Lu, Date: 2024-10-20, Title: Update README.md
 Author: github-actions[bot], Date: 2024-10-20, Title: Update Commit Logs
 Author: github-actions[bot], Date: 2024-10-20, Title: Update README with weekly commit counts
 Author: github-actions[bot], Date: 2024-10-20, Title: Update Commit Logs

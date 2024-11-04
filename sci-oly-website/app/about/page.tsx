@@ -1,5 +1,3 @@
-
-'use client';
 import Navbar from '@/components/ui/navbar2';
 import React from "react";
 
@@ -29,9 +27,9 @@ export default function about() {
 
                     Many states and regions have organized physics, biology or chemistry competitions, but few have combined all disciplines <br/>
                     in one large Science Olympiad. The excitement of many students from all science areas competing and cheering one  <br/>
-                    another on to greater learning caused one school district to coin the phrase "intellete". When they searched for a <br/>
+                    another on to greater learning caused one school district to coin the phrase &quot;intellete&quot;. When they searched for a <br/>
                     place to house their newly won Science Olympiad State Championship trophy, the only location available was outside  <br/>
-                    the principal's office in the "athlete" showcase, so they convinced the school board to build an "intellete" showcase.  <br/>
+                    the principal&apos;s office in the &quot;athlete&quot; showcase, so they convinced the school board to build an &quot;intellete&quot; showcase.  <br/>
                     One of the goals of the Science Olympiad is to elevate science education and learning to a level of enthusiasm and <br/>
                     support that is normally reserved only for varsity sports programs.
                 </p>

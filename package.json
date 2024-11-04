@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "next": "^14.2.15",
     "nextjs": "^0.0.3",
     "react": "^18.3.1",
