@@ -3,7 +3,7 @@ import React from "react";
 import Image from 'next/image';
 import water from '@/components/images/Water.png';
 import UserIntro from '@/components/ui/userintro';
-import {fetchOfficerInfo} from '../lib/data';
+import {fetchOfficerInfo} from '@/app/lib/data';
 
 const officer = await fetchOfficerInfo();
 
