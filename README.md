@@ -12,10 +12,12 @@ Please check branch: beta-0.1
 ## Total Commits by Contributors
 <!-- COMMIT_SECTION_START -->
 <!-- COMMIT_COUNTS_START -->
+   ```
    106	Elliot Lu
     64	github-actions[bot]
      8	Aidan Tam
      3	Yu Zheng
      3	elu211
+```
 <!-- COMMIT_COUNTS_END -->
 <!-- COMMIT_SECTION_END -->
