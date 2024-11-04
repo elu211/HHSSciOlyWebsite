@@ -9,26 +9,26 @@ interface ButtonData {
 
 // Sample data for buttons
 const buttonData: ButtonData[] = [
-    { title: "Button 1", info: "Information for Button 1" },
-    { title: "Button 2", info: "Information for Button 2" },
-    { title: "Button 3", info: "Information for Button 3" },
-    { title: "Button 4", info: "Information for Button 4" },
-    { title: "Button 5", info: "Information for Button 5" },
-    { title: "Button 6", info: "Information for Button 6" },
-    { title: "Button 7", info: "Information for Button 7" },
-    { title: "Button 8", info: "Information for Button 8" },
-    { title: "Button 9", info: "Information for Button 9" },
-    { title: "Button 10", info: "Information for Button 10" },
-    { title: "Button 11", info: "Information for Button 11" },
-    { title: "Button 12", info: "Information for Button 12" },
-    { title: "Button 13", info: "Information for Button 13" },
-    { title: "Button 14", info: "Information for Button 14" },
-    { title: "Button 15", info: "Information for Button 15" },
-    { title: "Button 16", info: "Information for Button 16" },
-    { title: "Button 17", info: "Information for Button 17" },
-    { title: "Button 18", info: "Information for Button 18" },
-    { title: "Button 19", info: "Information for Button 19" },
-    { title: "Button 20", info: "Information for Button 20" },
+    { title: "Competition 1", info: "Information for Competition 1" },
+    { title: "Competition 2", info: "Information for Competition 2" },
+    { title: "Competition 3", info: "Information for Competition 3" },
+    { title: "Competition 4", info: "Information for Competition 4" },
+    { title: "Competition 5", info: "Information for Competition 5" },
+    { title: "Competition 6", info: "Information for Competition 6" },
+    { title: "Competition 7", info: "Information for Competition 7" },
+    { title: "Competition 8", info: "Information for Competition 8" },
+    { title: "Competition 9", info: "Information for Competition 9" },
+    { title: "Competition 10", info: "Information for Competition 10" },
+    { title: "Competition 11", info: "Information for Competition 11" },
+    { title: "Competition 12", info: "Information for Competition 12" },
+    { title: "Competition 13", info: "Information for Competition 13" },
+    { title: "Competition 14", info: "Information for Competition 14" },
+    { title: "Competition 15", info: "Information for Competition 15" },
+    { title: "Competition 16", info: "Information for Competition 16" },
+    { title: "Competition 17", info: "Information for Competition 17" },
+    { title: "Competition 18", info: "Information for Competition 18" },
+    { title: "Competition 19", info: "Information for Competition 19" },
+    { title: "Competition 20", info: "Information for Competition 20" },
 ];
 
 const Competitions: React.FC = () => {
@@ -44,7 +44,6 @@ const Competitions: React.FC = () => {
             <div className="w-full flex justify-center items-center">
                 <Navbar />
             </div>
-            <p>Put competition information down below</p>
 
             {/* Grid of buttons */}
             <div className="grid grid-cols-5 gap-4">
