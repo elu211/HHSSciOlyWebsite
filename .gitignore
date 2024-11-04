@@ -1,3 +1,5 @@
 node_modules
 /tutorial
 /.vs
+/.env*
+/sci-oly-website

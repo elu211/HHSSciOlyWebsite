@@ -1,6 +1,7 @@
 'use client';
 import Navbar from '@/components/ui/navbar2';
-import React, { useState } from "react";
+import React from "react";
+import clsx from 'clsx';
 
 interface ButtonData {
     title: string;
@@ -32,12 +33,7 @@ const buttonData: ButtonData[] = [
 ];
 
 const Competitions: React.FC = () => {
-    // State to manage visibility of dropdowns
-    const [visibleIndex, setVisibleIndex] = useState<number | null>(null);
-
-    const toggleDropdown = (index: number) => {
-        setVisibleIndex(visibleIndex === index ? null : index);
-    };
+    // State to manage visibility of dropdown
 
     return (
         <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen pt-16 pb-20 gap-16 font-[family-name:var(--font-geist-sans)]">
@@ -46,20 +42,16 @@ const Competitions: React.FC = () => {
             </div>
 
             {/* Grid of buttons */}
-            <div className="grid grid-cols-5 gap-4">
+            <div className="grid grid-cols-5 gap-4 w-full items-center justify-center p-20">
                 {buttonData.map((data, index) => (
-                    <div key={index} className="relative">
+                    <div key={index} className="flex items-center justify-center px-10">
                         <button
-                            className="button bg-green-500 text-white py-2 px-4 rounded"
-                            onClick={() => toggleDropdown(index)}
+                            className={clsx(
+                                'flex h-[120px] grow items-center justify-center gap-5 rounded-md bg-green-500 hover:bg-green-300 text-xl font-medium  hover:text-black md:flex-none md:justify-start md:p-1 md:px-20',
+                              )}
                         >
                             {data.title}
                         </button>
-                        {visibleIndex === index && (
-                            <div className="absolute left-0 mt-1 bg-white border border-gray-300 rounded shadow-lg p-2">
-                                {data.info}
-                            </div>
-                        )}
                     </div>
                 ))}
             </div>

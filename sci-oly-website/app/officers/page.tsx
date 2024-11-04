@@ -1,9 +1,11 @@
-'use client';
 import Navbar from '@/components/ui/navbar2';
 import React from "react";
 import Image from 'next/image';
 import water from '@/components/images/Water.png';
 import UserIntro from '@/components/ui/userintro';
+import {fetchOfficerInfo} from '../lib/data';
+
+const officer = await fetchOfficerInfo();
 
 export default function officers() {
     return (
@@ -26,40 +28,14 @@ export default function officers() {
                     <p className="w-full font-semibold text-4xl text-center bg-blue-200 p-5 rounded-2xl">Team Captains</p>
                 </div>
                 <div className="relative flex w-full overflow-clip justify-center pl-32 pr-32 gap-32">
-
-                    <UserIntro
-                        imagepath='blank.png'
-                        oName="Officer"
-                        description="Blank">
-                        </UserIntro>
-                    <UserIntro
-                        imagepath='blank.png'
-                        oName="Officer"
-                        description="Blank">
-                        </UserIntro>
-                    <UserIntro
-                        imagepath='blank.png'
-                        oName="Officer"
-                        description="Blank">
-                        </UserIntro>
+                    {officer.slice(0, 3).map((item, index) => (
+                            <UserIntro key={index} imagepath={item.img} oName={item.name} position={item.position} description={item.descrip} />         
+                    ))}
                 </div>
                 <div className="relative flex w-full overflow-clip justify-center pl-32 pr-32 gap-32">
-                    <UserIntro
-                        imagepath='blank.png'
-                        oName="Officer"
-                        description="Blank">
-                        </UserIntro>
-                    <UserIntro
-                        imagepath='blank.png'
-                        oName="Officer"
-                        description="Blank">
-                        </UserIntro>
-                    <UserIntro
-                        imagepath='blank.png'
-                        oName="Officer"
-                        description="Blank">
-                        </UserIntro>
-                    
+                    {officer.slice(3).map((item, index) => (
+                            <UserIntro key={index} imagepath={item.img} oName={item.name} position={item.position} description={item.descrip} />         
+                    ))}
                 </div>
             </main>
             <footer className="w-full row-start-3 flex gap-20 p-20 items-center justify-center">

@@ -1,4 +1,4 @@
-'use client';
+import { Analytics } from "@vercel/analytics/react";
 import Image from "next/image";
 import sphere from "@/components/images/100.png";
 import Navbar from '@/components/ui/navbar2'
@@ -12,7 +12,7 @@ export default function Home() {
             <Navbar />
         </div>
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-      
+      <Analytics />
       <div className="relative w-full overflow-clip items-center rounded-xl" style={{height:"600px"}}>
         <Image 
             src= {sphere}
@@ -28,7 +28,7 @@ export default function Home() {
 
       <div className="w-50 object-center m-auto flex items-center flex-col sm:flex-row pt-20" >
         <p  className="top-20 bottom-0 w-full h-fit text-3xl z-10 text-emerald-500 text-left  font-semibold" style={{padding: '5px 200px'}}>
-        Homestead Science Olympiad is a local business dedicated to promoting scientific knowledge and <br/><br/>
+        Homestead Science Olympiad is a school club dedicated to promoting scientific knowledge and <br/><br/>
         skills among students. Our goal is to foster a love for science through fun and engaging activities.<br/><br/>
         At Homestead Science Olympiad, we believe in the power of hands-on learning and strive to create <br/><br/>
         an environment where young minds can explore, experiment, and excel.

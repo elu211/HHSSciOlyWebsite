@@ -1,6 +1,4 @@
-'use client';
- 
-import Link from 'next/link';
+ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
 import React from "react";
@@ -14,7 +12,8 @@ const links = [
     href: '/officers'
   },
   { name: 'Calendar', href: '/calendar'},
-  // { name: 'Competitions', href: '/competitions'},
+  { name: 'Competitions', href: '/competitions'},
+  { name: 'Points', href: '/points'},
   { name: 'Links', href: '/links'},
 ];
 
