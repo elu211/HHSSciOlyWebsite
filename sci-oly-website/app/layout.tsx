@@ -3,7 +3,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import React from "react";
 import { tinos } from '@/components/ui/fonts';
-// import Link from 'next/link';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
