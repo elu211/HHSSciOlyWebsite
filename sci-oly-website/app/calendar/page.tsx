@@ -1,4 +1,4 @@
-import Navbar from '@/components/ui/navbar2';
+import Navbar from '@/components/ui/navbar3';
 import Iframe from 'react-iframe';
 import React from "react";
 

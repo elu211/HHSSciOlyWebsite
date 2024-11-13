@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from "react";
-import Navbar from '@/components/ui/navbar2';
+import Navbar from '@/components/ui/navbar3';
 import clsx from 'clsx';
 import Modal from "./modal";
 

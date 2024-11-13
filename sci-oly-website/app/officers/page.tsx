@@ -1,4 +1,4 @@
-import Navbar from '@/components/ui/navbar2';
+import Navbar from '@/components/ui/navbar3';
 import React from "react";
 import Image from 'next/image';
 import water from '@/components/images/Water.png';

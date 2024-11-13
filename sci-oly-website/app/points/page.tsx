@@ -1,4 +1,4 @@
-import Navbar from '@/components/ui/navbar2'
+import Navbar from '@/components/ui/navbar3'
 import React from "react";
 import RankTable from '@/components/ui/ranking-table';
 
