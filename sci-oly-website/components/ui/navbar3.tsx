@@ -37,7 +37,7 @@ const Navbar = () => {
         display: 'block',
         transition: 'top 0.5s',
     }}>
-      <div className={'flex justify-between pt-2'}>
+      <div className={'flex justify-between pt-2'}style={{ border: '1px solid red' }}>
       <div className={`bg-white flex justify-self-start items-center px-5`}>
         <Image 
             className="dark:invert pt-2"
@@ -50,7 +50,7 @@ const Navbar = () => {
         <Link href="/"
             className="text-4xl pl-5"
         >
-        <p className="text-xl" style={{fontFamily: 'tinos'}}>Homestead <br></br> SciOly</p>
+        <p className="text-xl" style={{fontFamily: 'tinos'}}>Homestead<br></br>Science Olympiad</p>
         </Link>
         </div>
         <div className={`bg-white flex justify-center items-center`}>
