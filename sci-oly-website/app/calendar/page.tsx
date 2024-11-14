@@ -4,7 +4,7 @@ import React from "react";
 
 export default function calendar() {
     return (
-        <div className="overflow-hidden grid  items-top justify-items-center min-h-screen pt-16   font-[family-name:var(--font-geist-sans)]">
+        <div className="overflow-hidden grid  items-top justify-items-center min-h-screen pt-11   font-[family-name:var(--font-geist-sans)]">
             <div className="w-full h-0 flex justify-center items-center">
                 <Navbar />
             </div>
