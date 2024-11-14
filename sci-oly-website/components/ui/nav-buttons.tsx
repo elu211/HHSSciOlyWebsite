@@ -26,7 +26,7 @@ export default function NavButtons() {
             href={button.href}
             target="_blank"
             className={clsx(
-              'flex md:p-1 md:px-3'
+              'flex md:px-1 lg:px-2 xl:px-3'
             )}
           >
             <Image 
