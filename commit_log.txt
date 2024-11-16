@@ -1,3 +1,5 @@
+Author: Yu Zheng, Date: 2024-11-15, Title: new scioly picture
+Author: github-actions[bot], Date: 2024-11-14, Title: Update Commit Logs
 Author: Yu Zheng, Date: 2024-11-13, Title: fixed navbar white space issue
 Author: github-actions[bot], Date: 2024-11-14, Title: Update Commit Logs
 Author: Yu Zheng, Date: 2024-11-13, Title: Merge branch 'new-navbar-test' of https://github.com/elu211/HHSSciOlyWebsite into new-navbar-test
