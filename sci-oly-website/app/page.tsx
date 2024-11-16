@@ -1,6 +1,7 @@
 import { Analytics } from "@vercel/analytics/react";
 import Image from "next/image";
 import sphere from "@/components/images/100.png";
+import pic from "@/components/images/homepage.png";
 import Navbar from '@/components/ui/navbar3'
 import React from "react";
 // import tinos from '@/components/ui/fonts'
@@ -13,15 +14,18 @@ export default function Home() {
         </div>
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
       <Analytics />
-      <div className="relative w-full overflow-clip items-center rounded-xl" style={{height:"600px"}}>
-        <Image 
-            src= {sphere}
-            width="0"
-            height="0"
-            className="object-none z-0 object-center w-full h-auto rounded-xl"
-            priority alt={""}
-        />
-        <h1 className="absolute top-0 bottom-0 w-50 h-fit text-7xl ml-20 mt-auto mb-auto z-100 text-white text-left" >Welcome to <br/>Homestead <br/>Science Olympiad!</h1  >
+      <div className="relative overflow-clip w-screen flex items-center rounded-xl" style={{height:"500px"}}>
+        <div className="w-full absolute inset-0 w-full h-full bg-green-800 rounded-xl z-0"></div>
+        <div className="relative z-10 w-full flex justify-center">
+          <Image 
+              src= {pic}
+              width="0"
+              height="0"
+              className="object-cover h-full rounded-xl"
+              priority alt={""}
+          />
+        </div>
+        <h1 className="absolute top-0 bottom-0 w-50 h-fit text-7xl ml-20 mt-auto mb-auto z-20 text-white text-left" >Welcome to <br/>Homestead <br/>Science Olympiad!</h1  >
       </div>
       
       
