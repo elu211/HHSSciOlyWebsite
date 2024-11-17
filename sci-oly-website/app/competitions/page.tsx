@@ -76,15 +76,14 @@ const Competitions: React.FC = () => {
             {/* Competition Buttons */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6 px-4 py-12">
                 {buttonData.map((data, index) => {
-                    const isLastEight = index >= buttonData.length - 8;
+                    const numBuildEvents = index >= buttonData.length - 8;
 
                     return (
                         <div key={index} className="flex items-center justify-center px-6 py-4">
                             <button
                                 className={clsx(
-                                    'flex h-[120px] w-[400px] items-center justify-center gap-4 rounded-md text-xl font-medium text-white transition-all duration-300 ease-in-out shadow-lg transform hover:scale-105',
-                                    // Apply blue background to the last 8 buttons
-                                    isLastEight ? 'bg-blue-500 hover:bg-blue-400' : 'bg-green-500 hover:bg-green-400'
+                                    "flex h-[100px] w-[300px] items-center justify-center gap-1 px-2 rounded-md text-lg font-medium text-white transition-all duration-300 ease-in-out shadow-lg transform hover:scale-105",
+                                    numBuildEvents ? 'bg-blue-500 hover:bg-blue-400' : 'bg-green-500 hover:bg-green-400'
                                 )}
                                 onClick={() => openModal(data.info)}
                             >
