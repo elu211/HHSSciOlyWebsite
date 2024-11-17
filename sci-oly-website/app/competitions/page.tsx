@@ -33,10 +33,6 @@ const buttonData: ButtonData[] = [
     { title: "Competition 21", info: "Information for Competition 21" },
     { title: "Competition 22", info: "Information for Competition 22" },
     { title: "Competition 23", info: "Information for Competition 23" },
-
-
-
-
 ];
 
 const Competitions: React.FC = () => {
@@ -54,32 +50,54 @@ const Competitions: React.FC = () => {
     };
 
     return (
-        <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen pt-8 pb-20 gap-10 font-[family-name:var(--font-geist-sans)]">
-            <div className="w-full flex justify-center items-center">
+        <div className="min-h-screen bg-gray-100 font-[family-name:var(--font-geist-sans)]">
+            {/* Navbar */}
+            <div className="w-full flex justify-center items-center p-4">
                 <Navbar />
             </div>
-            <div>
-            <p className="text-5xl pl-10 w-full h-full" style={{ height: '50px' }}>Competition Information</p>
-            </div>
-            <div className="grid grid-cols-5 gap-4 w-full items-center justify-center p-20">
-                {buttonData.map((data, index) => (
-                    <div key={index} className="flex items-center justify-center px-10">
-                        <button
-                            className={clsx(
-                                'flex h-[120px] grow items-center justify-center gap-5 rounded-md bg-green-500 hover:bg-green-300 text-xl font-medium hover:text-black md:flex-none md:justify-start md:p-1 md:px-20',
-                            )}
-                            onClick={() => openModal(data.info)}
-                        >
-                            {data.title}
-                        </button>
-                    </div>
-                ))}
+
+            {/* Header */}
+            <div className="text-center pt-10 pb-4">
+                <h1 className="text-4xl font-bold text-gray-800">Competition Information</h1>
             </div>
 
+            {/* Legend */}
+            <div className="absolute top-32 left-6 flex flex-col items-start bg-white p-4 rounded-lg shadow-md">
+                <div className="flex items-center mb-3">
+                    <div className="w-5 h-5 bg-green-500 rounded-sm mr-3"></div>
+                    <span className="text-lg font-semibold text-gray-700">Regular Competitions</span>
+                </div>
+                <div className="flex items-center mb-3">
+                    <div className="w-5 h-5 bg-blue-500 rounded-sm mr-3"></div>
+                    <span className="text-lg font-semibold text-gray-700">Build Events</span>
+                </div>
+            </div>
+
+            {/* Competition Buttons */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6 px-4 py-12">
+                {buttonData.map((data, index) => {
+                    const isLastEight = index >= buttonData.length - 8;
+
+                    return (
+                        <div key={index} className="flex items-center justify-center px-6 py-4">
+                            <button
+                                className={clsx(
+                                    'flex h-[120px] w-[400px] items-center justify-center gap-4 rounded-md text-xl font-medium text-white transition-all duration-300 ease-in-out shadow-lg transform hover:scale-105',
+                                    // Apply blue background to the last 8 buttons
+                                    isLastEight ? 'bg-blue-500 hover:bg-blue-400' : 'bg-green-500 hover:bg-green-400'
+                                )}
+                                onClick={() => openModal(data.info)}
+                            >
+                                {data.title}
+                            </button>
+                        </div>
+                    );
+                })}
+            </div>
             {/* Modal */}
             <Modal isOpen={isModalOpen} onClose={closeModal}>
                 <h2 className="text-2xl font-semibold mb-4">Competition Information</h2>
-                <p>{selectedInfo}</p>
+                <p className="text-lg">{selectedInfo}</p>
             </Modal>
         </div>
     );
