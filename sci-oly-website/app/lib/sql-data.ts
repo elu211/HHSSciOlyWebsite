@@ -2,7 +2,7 @@ const officers=[
     {
         id: 1,
         img:"blank.png",
-        name:"Name 1",
+        name:"Fisher Zheng",
         position:"Co-President",
         descrip:"President of Homestead Sci Oly 2024-2025",
     },

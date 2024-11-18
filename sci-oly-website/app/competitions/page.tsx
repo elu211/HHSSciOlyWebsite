@@ -76,7 +76,7 @@ const Competitions: React.FC = () => {
             {/* Competition Buttons */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6 px-4 py-12">
                 {buttonData.map((data, index) => {
-                    const numBuildEvents = index >= buttonData.length - 8;
+                    const numBuildEvents = index >= buttonData.length - 7;
 
                     return (
                         <div key={index} className="flex items-center justify-center px-6 py-4">
