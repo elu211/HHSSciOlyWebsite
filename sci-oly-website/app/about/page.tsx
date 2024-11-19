@@ -1,13 +1,29 @@
 'use client';
 import Navbar from '@/components/ui/navbar3';
 import React from "react";
+import Image from "next/image";
+import pic from "@/components/images/about.png";
 
 export default function about() {
     return (
-        <div className="grid grid-rows-[20px_1fr_20px] items-start justify-items-center min-h-screen pt-8 pb-20 gap-10  font-[family-name:var(--font-geist-sans)]">
+        <div className="overflow-y-auto min-h-screen pt-8 pb-20 gap-12  font-[family-name:var(--font-geist-sans)]">
             <div className="w-full flex justify-center items-center">
                 <Navbar />
             </div>
+            <div className="relative overflow-clip w-screen flex items-center rounded-xl mt-8" style={{height:"500px"}}>
+                <div className="w-full absolute inset-0 w-full h-full bg-green-800 rounded-xl z-0"></div>
+                <div className="relative z-10 w-full flex justify-center">
+                <Image 
+                    src= {pic}
+                    width="0"
+                    height="0"
+                    className="object-cover h-full rounded-xl"
+                    priority alt={""}
+                />
+                </div>
+                <h1 className="absolute top-0 bottom-0 w-50 h-fit text-7xl ml-20 mt-auto mb-auto z-20 text-white text-left" >About Us</h1>
+            </div>
+            <div className="items-start justify-items-center ">
             <div className="justify-center items-center pt-8" style={{width:'1000px'}}>
                 <br/>
                 <p  className=" w-full h-fit text-4xl z-10 text-emerald-500 text-left font-bold">
@@ -33,6 +49,7 @@ export default function about() {
 
 
                 </p>
+            </div>
             </div>
         </div>
     );
