@@ -60,7 +60,7 @@ const Navbar = () => {
           </div>
           <div className={`bg-white flex justify-center items-center`}>
             <NavLinks/>
-            <NavButtons />
+            {/* <NavButtons /> */}
           </div>
           <div className={`bg-white flex justify-self-end items-center px-5`}>
               <button className={'px-2'}>Login</button>
